@@ -1,0 +1,12 @@
+{
+  "name": "@devlife-ui/eslint-config",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "index.js",
+  "author": "@Tony Silva",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.1.0",
+    "eslint": "^8.51.0"
+  }
+}

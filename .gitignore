@@ -1,0 +1,17 @@
+# React project
+/node_modules
+/build
+/.cache
+/.idea
+/.vscode
+/**/dist
+
+# Node project
+/dist
+/.env
+.DS_Store
+
+# Next.js project
+/.next
+/out
+/.env.local
