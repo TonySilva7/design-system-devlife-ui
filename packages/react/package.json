@@ -8,7 +8,7 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:fix": "eslint --fix ./src/**/*.{ts,tsx}"
   },
   "keywords": [],
   "author": "@Tony Silva",
@@ -16,6 +16,7 @@
   "devDependencies": {
     "@devlife-ui/ts-config": "*",
     "@devlife-ui/tokens": "*",
+    "@devlife-ui/eslint-config": "*",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2"
   }

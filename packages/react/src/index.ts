@@ -1,5 +1,3 @@
-import {colors} from '@devlife-ui/tokens'
+import { colors } from '@devlife-ui/tokens'
 
-console.log('react package' + colors.black );
-
-
+console.log('react package' + colors.black)
