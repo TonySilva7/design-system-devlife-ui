@@ -1,5 +1,9 @@
-import { colors } from '@devlife-ui/tokens'
+import { styled } from './styles'
 
-export const App: React.FC = () => (
-  <div style={{ color: colors.devlife500 }}>Hello, world!</div>
-)
+const Button = styled('button', {
+  fontFamily: '$default',
+  backgroundColor: '$devlife500',
+  borderRadius: '$md',
+})
+
+export const App: React.FC = () => <Button>Hello, world!</Button>
