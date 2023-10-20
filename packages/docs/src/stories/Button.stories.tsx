@@ -2,7 +2,7 @@ import { Button, ButtonProps } from '@devlife-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 export default {
-  tittle: 'Button',
+  title: 'Form/Button',
   component: Button,
   args: {
     children: 'Só clique',
