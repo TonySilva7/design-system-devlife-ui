@@ -14,6 +14,11 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@devlife-ui/eslint-config": "*",
+    "@devlife-ui/ts-config": "*",
+    "@devlife-ui/react": "*",
+    "@devlife-ui/tokens": "*",
+    "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
