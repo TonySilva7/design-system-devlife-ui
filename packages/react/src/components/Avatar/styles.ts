@@ -1,6 +1,35 @@
 import { ComponentProps } from 'react'
 import { styled } from '../../styles'
+import * as Avatar from '@radix-ui/react-avatar'
 
-export const AvatarContainer = styled('div', {})
+export const AvatarContainer = styled(Avatar.Root, {
+  borderRadius: '$full',
+  display: 'inline-block',
+  width: '$12',
+  height: '$12',
+  overflow: 'hidden',
+})
 
-export type AvatarContainerProps = ComponentProps<typeof AvatarContainer>
+export const AvatarImage = styled(Avatar.Image, {
+  width: '100%',
+  height: '100%',
+  objectFit: 'cover',
+  borderRadius: 'inherit',
+})
+
+export const AvatarFallback = styled(Avatar.Fallback, {
+  display: 'flex',
+  width: '100%',
+  height: '100%',
+  alignItems: 'center',
+  justifyContent: 'center',
+  backgroundColor: '$gray600',
+  color: '$gray800',
+
+  svg: {
+    width: '$6',
+    height: '$6',
+  },
+})
+
+export type AvatarContainerProps = ComponentProps<typeof AvatarImage>

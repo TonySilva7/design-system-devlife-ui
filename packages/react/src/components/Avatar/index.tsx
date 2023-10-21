@@ -1,12 +1,21 @@
-import { ComponentProps } from 'react'
-import { AvatarContainer } from './styles'
+import { User } from 'phosphor-react'
+import {
+  AvatarContainer,
+  AvatarContainerProps,
+  AvatarFallback,
+  AvatarImage,
+} from './styles'
 
-type AvatarProps = ComponentProps<typeof AvatarContainer>
+type AvatarProps = AvatarContainerProps
 
 function Avatar({ ...props }: AvatarProps) {
   return (
-    <AvatarContainer {...props}>
-      <h1>Hello Avatar</h1>
+    <AvatarContainer>
+      <AvatarImage {...props} />
+
+      <AvatarFallback delayMs={500}>
+        <User />
+      </AvatarFallback>
     </AvatarContainer>
   )
 }
