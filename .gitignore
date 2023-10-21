@@ -5,6 +5,7 @@
 /.idea
 /.vscode
 /**/dist
+.turbo
 
 # Node project
 /dist
