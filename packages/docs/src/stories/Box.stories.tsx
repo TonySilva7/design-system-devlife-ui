@@ -1,4 +1,4 @@
-import { Box, BoxProps } from '@devlife-ui/react'
+import { Box, BoxProps, Text } from '@devlife-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 export default {
@@ -7,7 +7,7 @@ export default {
   args: {
     children: (
       <>
-        <span>Hello</span>
+        <Text>Hello</Text>
       </>
     ),
   },
