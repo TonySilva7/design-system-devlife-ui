@@ -1,23 +1,20 @@
-import { User } from 'phosphor-react'
+import { Check } from 'phosphor-react'
 import {
-  AvatarContainer,
-  AvatarContainerProps,
-  AvatarFallback,
-  AvatarImage,
+  CheckboxContainer,
+  CheckboxContainerProps,
+  CheckboxIndicator,
 } from './styles'
 
-type AvatarProps = AvatarContainerProps
+type CheckBoxProps = CheckboxContainerProps
 
-function Avatar({ ...props }: AvatarProps) {
+function CheckBox({ ...props }: CheckBoxProps) {
   return (
-    <AvatarContainer>
-      <AvatarImage {...props} />
-
-      <AvatarFallback delayMs={500}>
-        <User />
-      </AvatarFallback>
-    </AvatarContainer>
+    <CheckboxContainer {...props}>
+      <CheckboxIndicator asChild>
+        <Check weight="bold" />
+      </CheckboxIndicator>
+    </CheckboxContainer>
   )
 }
 
-export { Avatar, type AvatarProps }
+export { CheckBox, type CheckBoxProps }
