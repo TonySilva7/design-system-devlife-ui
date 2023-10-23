@@ -13,4 +13,6 @@ function TextInput({ prefix, ...props }: TextInputProps) {
   )
 }
 
+TextInput.displayName = 'TextInput'
+
 export { TextInput, type TextInputProps }

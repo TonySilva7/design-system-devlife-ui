@@ -17,4 +17,6 @@ function CheckBox({ ...props }: CheckBoxProps) {
   )
 }
 
+CheckBox.displayName = 'CheckBox'
+
 export { CheckBox, type CheckBoxProps }

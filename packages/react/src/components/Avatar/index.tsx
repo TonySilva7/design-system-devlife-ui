@@ -20,4 +20,6 @@ function Avatar({ ...props }: AvatarProps) {
   )
 }
 
+Avatar.displayName = 'Avatar'
+
 export { Avatar, type AvatarProps }
