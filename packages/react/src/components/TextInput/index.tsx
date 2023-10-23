@@ -1,17 +1,20 @@
+import { ElementRef, forwardRef } from 'react'
 import { Input, Prefix, TextInputContainer, InputProps } from './styles'
 
 type TextInputProps = InputProps & {
   prefix?: string
 }
 
-function TextInput({ prefix, ...props }: TextInputProps) {
-  return (
-    <TextInputContainer>
-      {!!prefix && <Prefix>{prefix}</Prefix>}
-      <Input {...props} />
-    </TextInputContainer>
-  )
-}
+const TextInput = forwardRef<ElementRef<typeof Input>, TextInputProps>(
+  ({ prefix, ...props }, ref) => {
+    return (
+      <TextInputContainer>
+        {!!prefix && <Prefix>{prefix}</Prefix>}
+        <Input ref={ref} {...props} />
+      </TextInputContainer>
+    )
+  },
+)
 
 TextInput.displayName = 'TextInput'
 
