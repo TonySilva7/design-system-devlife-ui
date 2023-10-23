@@ -9,6 +9,7 @@
     "release": "turbo run build --filter=!docs && changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.2",
     "turbo": "^1.10.16"
   }
 }
