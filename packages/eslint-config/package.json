@@ -1,6 +1,6 @@
 {
   "name": "@devlife-ui/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "ESLint configuration forked by @rocketseat",
   "main": "index.js",
