@@ -9,6 +9,23 @@ export default {
     alt: 'Tony Silva',
     title: 'Tony Silva',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+    alt: {
+      control: {
+        type: 'text',
+      },
+    },
+    title: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}
