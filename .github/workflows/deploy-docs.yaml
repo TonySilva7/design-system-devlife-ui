@@ -3,7 +3,7 @@ name: Deploy docs
 on:
   push:
     branches:
-      - main
+      - storybook
 
 jobs:
   build-and-deploy:
