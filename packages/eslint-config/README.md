@@ -1,4 +1,4 @@
-# eslint-config-example
+# eslint-config
 
 This package provides a set of ESLint configurations for use in JavaScript projects (ReactJS, NextJS and NodeJS).
 The configurations are designed to enforce best practices and maintain code consistency.
