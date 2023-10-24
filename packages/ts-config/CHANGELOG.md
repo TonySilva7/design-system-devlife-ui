@@ -1,5 +1,11 @@
 # @devlife-ui/ts-config
 
+## 1.0.4
+
+### Patch Changes
+
+- Update readme on all packages
+
 ## 1.0.3
 
 ### Patch Changes
