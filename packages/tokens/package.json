@@ -1,7 +1,7 @@
 {
   "name": "@devlife-ui/tokens",
   "version": "1.0.1",
-  "description": "",
+  "description": "Tokens of the DevLife UI Design System",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",

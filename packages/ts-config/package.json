@@ -2,5 +2,6 @@
   "name": "@devlife-ui/ts-config",
   "version": "1.0.1",
   "license": "MIT",
+  "description": "Typescript configuration for Devlife UI",
   "private": false
 }
