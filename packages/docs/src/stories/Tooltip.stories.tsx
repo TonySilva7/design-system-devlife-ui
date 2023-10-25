@@ -1,16 +1,37 @@
-import { Tooltip, TooltipProps, Button, Text } from '@devlife-ui/react'
+import {
+  Tooltip,
+  TooltipProps,
+  Button,
+  Text,
+  TooltipAppWrapper,
+} from '@devlife-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 export default {
-  title: 'Data display/Tooltip',
+  title: 'Feedback/Tooltip',
   component: Tooltip,
   args: {
     textContent: 'Click to something',
   },
+  decorators: [
+    (Story) => (
+      <TooltipAppWrapper>
+        <Story />
+      </TooltipAppWrapper>
+    ),
+  ],
   argTypes: {
     children: {
       control: {
         type: null,
+      },
+    },
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'É necessário que você envolva a sua aplicação com o componente `TooltipAppWrapper` para que o tooltip funcione corretamente.',
       },
     },
   },

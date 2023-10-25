@@ -1,3 +1,4 @@
+import { FC } from 'react'
 import {
   TooltipArrow,
   TooltipContainer,
@@ -11,23 +12,29 @@ type TooltipProps = TooltipContainerProps & {
   textContent: string
 }
 
+const TooltipAppWrapper: FC<TT.TooltipProviderProps> = ({ children }) => {
+  if (!children) {
+    throw new Error('TooltipAppWrapper must have children')
+  }
+
+  return <TT.TooltipProvider>{children}</TT.TooltipProvider>
+}
+
 function Tooltip({ children, textContent, ...props }: TooltipProps) {
   return (
-    <TT.Provider>
-      <TooltipContainer {...props}>
-        <TT.Trigger asChild>{children}</TT.Trigger>
+    <TooltipContainer {...props}>
+      <TT.Trigger asChild>{children}</TT.Trigger>
 
-        <TT.Portal>
-          <TooltipContent sideOffset={5}>
-            {textContent}
-            <TooltipArrow />
-          </TooltipContent>
-        </TT.Portal>
-      </TooltipContainer>
-    </TT.Provider>
+      <TT.Portal>
+        <TooltipContent sideOffset={5}>
+          {textContent}
+          <TooltipArrow />
+        </TooltipContent>
+      </TT.Portal>
+    </TooltipContainer>
   )
 }
 
 Tooltip.displayName = 'Tooltip'
 
-export { Tooltip, type TooltipProps }
+export { Tooltip, TooltipAppWrapper, type TooltipProps }
