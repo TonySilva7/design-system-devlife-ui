@@ -1,10 +1,9 @@
 import {
-  Tooltip,
-  TooltipProps,
-  Button,
-  Text,
-  TooltipAppWrapper,
   Box,
+  Text,
+  Tooltip,
+  TooltipAppWrapper,
+  TooltipProps,
 } from '@devlife-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
