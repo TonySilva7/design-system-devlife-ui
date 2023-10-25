@@ -2,7 +2,6 @@ import * as RToast from '@radix-ui/react-toast'
 import { X } from 'phosphor-react'
 import { FC } from 'react'
 import { Heading } from '../Heading'
-import { Text } from '../Text'
 import {
   ToastAction,
   ToastButton,
