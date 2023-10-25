@@ -29,6 +29,27 @@ export default {
         type: 'inline-radio',
       },
     },
+    foreground: {
+      options: [
+        'primary',
+        'secondary',
+        'tertiary',
+        'quaternary',
+        'gray100',
+        'gray200',
+        'gray400',
+        'gray500',
+        'gray600',
+        'gray700',
+        'gray800',
+        'gray900',
+        'white',
+        'black',
+      ],
+      control: {
+        type: 'inline-radio',
+      },
+    },
   },
 } as Meta<TextProps>
 
