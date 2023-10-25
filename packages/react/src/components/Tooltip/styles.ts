@@ -5,10 +5,16 @@ import * as Tooltip from '@radix-ui/react-tooltip'
 export const TooltipContainer = styled(Tooltip.Root, {})
 
 export const TooltipContent = styled(Tooltip.Content, {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
   borderRadius: '$sm',
   backgroundColor: '$gray900',
-  padding: '$2 $4',
+  minHeight: '2.75rem',
+  minWidth: '13.6rem',
   fontFamily: '$default',
+  fontWeight: '$medium',
+  fontSize: 'small',
   color: '$gray100',
 })
 

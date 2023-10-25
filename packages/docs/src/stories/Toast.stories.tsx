@@ -5,8 +5,8 @@ export default {
   title: 'Feedback/Toast',
   component: Toast,
   args: {
-    title: 'Hello!',
-    description: 'This is a toast',
+    title: 'Agendamento realizado',
+    description: 'Quarta-feira, 23 de Outubro às 16h',
     duration: 3000,
     defaultOpen: true,
   },

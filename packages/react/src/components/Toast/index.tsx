@@ -8,6 +8,7 @@ import {
   ToastButton,
   ToastContainer,
   ToastContainerProps,
+  ToastText,
   ToastTitle,
 } from './styles'
 
@@ -25,12 +26,10 @@ function Toast({ title, description, ...props }: ToastProps) {
     <>
       <ToastContainer {...props}>
         <ToastTitle>
-          <Heading size="sm">{title}</Heading>
+          <Heading css={{ fontSize: '$xl', color: '$white' }}>{title}</Heading>
         </ToastTitle>
         <RToast.Description asChild>
-          <Text size="sm" foreground="gray200">
-            {description}
-          </Text>
+          <ToastText>{description}</ToastText>
         </RToast.Description>
         <ToastAction asChild altText="x">
           <ToastButton>

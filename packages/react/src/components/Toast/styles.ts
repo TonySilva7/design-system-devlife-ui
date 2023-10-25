@@ -1,19 +1,29 @@
 import { ComponentProps } from 'react'
 import { styled } from '../../styles'
 import * as Toast from '@radix-ui/react-toast'
+import { Text } from '../Text'
 
 export const ToastContainer = styled(Toast.Root, {
-  backgroundColor: '$gray900',
+  backgroundColor: '$gray800',
   color: '$gray100',
   fontFamily: '$default',
   borderRadius: '$md',
-  maxWidth: '20rem',
+  width: '22.5rem',
   padding: '1rem',
   listStyle: 'none',
   position: 'relative',
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '$2',
 })
+
 export const ToastTitle = styled(Toast.Title, {
   color: '$gray100',
+})
+export const ToastText = styled(Text, {
+  color: '$gray200',
+  fontWeight: '$regular',
+  fontSize: 'small',
 })
 
 export const ToastDescription = styled(Toast.Description, {
@@ -31,7 +41,7 @@ export const ToastButton = styled('button', {
   all: 'unset',
   cursor: 'pointer',
   svg: {
-    color: '$gray100',
+    fill: '$gray200',
   },
 })
 

@@ -4,6 +4,7 @@ import {
   Button,
   Text,
   TooltipAppWrapper,
+  Box,
 } from '@devlife-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
@@ -11,7 +12,7 @@ export default {
   title: 'Feedback/Tooltip',
   component: Tooltip,
   args: {
-    textContent: 'Click to something',
+    textContent: '21 de Outubro - Indisponível',
   },
   decorators: [
     (Story) => (
@@ -39,11 +40,7 @@ export default {
 
 export const Primary: StoryObj<TooltipProps> = {
   args: {
-    children: (
-      <Button variant="primary" size="sm">
-        Hover me
-      </Button>
-    ),
+    children: <Box css={{ width: '$20', color: '$gray200' }}>Hover me</Box>,
   },
 }
 
